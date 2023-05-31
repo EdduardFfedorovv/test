@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    background: #1E1E1E;
+    margin: 0;
+}
+.wrapper{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    max-width: 605px;
+    margin: 0 50px;
+}
+.design{
+    max-width: 704px;
+    width: 100%;
+    background: #292929;
+}
+.design__top{
+    display: flex;
+    margin-top: 50px;
+    padding-bottom: 25px;
+    margin-bottom: 33px;
+    position: relative;
+}
+.design__top::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: #44494A;
+    bottom: 0;
+}
+.design__top-img{
+    margin-right: 10px;
+}
+.design__top-title{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF;
+    margin-bottom: 5px;
+}
+.design__top-subtitle{
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    color: #C4C4C4;
+}
+.design__main{
+    padding-bottom: 20px;
+}
+.design__main-title{
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 150%;
+    color: #FFFFFF;
+    margin-bottom: 25px;
+}
+.design__main-items{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 22px;
+}
+.design__main-items:nth-child(2){
+    margin-bottom: 26px;
+}
+.design__main-items:nth-child(4) {
+    margin-bottom: 26px;
+}
+.design__main-item{
+    padding-left: 34px;
+}
+.design__item-text{
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 150%;
+    color: #E3E3E3;
+}
+.item-cross{
+    position: relative;
+    max-width: 281px;
+}
+.item-plus{
+    position: relative;
+    max-width: 279px;
+}
+.item-cross::before{
+    content:"";
+    position: absolute;
+    background-image: url('./img/cross.svg');
+    background-position:center;
+    left: 0;
+    top: 0;
+    width: 24px;
+    height: 24px;
+}
+.item-plus::before{
+    content:"";
+    position: absolute;
+    background-image: url('./img/plus.svg');
+    background-position: center;
+    width: 24px;
+    height: 24px;
+    left: 0;
+    top: 0;
+}
+.design__item-text--colorfont{
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 150%;
+    color: #9E9C9C;
+}
+.item-spacial{
+    padding-top: 8px;
+    padding-left: 36px;
+}
+.item-spacial::before{
+    left: 2px;
+    top: 8px;
+}
+.design__item-text--color{
+    color: #9E9C9C;
+}
+.design__item-text--font{
+    font-family: 'Open Sans';
+}
